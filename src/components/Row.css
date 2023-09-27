@@ -1,0 +1,31 @@
+.row{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+ ::-webkit-scrollbar{      /* scroll bar kaanathe irikaan */
+    display: none;
+}
+
+.movies-row{
+    display: flex;         /* same row il display akaan*/
+    overflow-x: scroll;   /* scroll cheyumbo side il pokaan vendiyit*/
+    margin-top: 20px;
+}
+
+.movie{
+    width: 100%;
+    max-height:200px ;
+    margin-right: 20px;
+    object-fit: contain;     /*image hover cheyumbo container il fit cheyth nikaan vndiyit */
+    transition: transform 460ms;   /* ethra seconds il transition nadakkanm enn ullath kanikan vndiyit*/
+
+}
+
+.movie:hover{
+    transform: scale(1.06);
+}
+
+.movie-poster{
+    max-height: 350px;
+}
